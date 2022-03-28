@@ -4,6 +4,119 @@
 }
 
 body {
+    height: 100vh;
     background: url(../images/background.png) no-repeat;
     background-size: cover;
+    backdrop-filter: brightness(.6);
+}
+
+header {
+    padding: 25px 0;
+}
+
+.container {
+    max-width: 1200px;
+    width: 60%;
+    margin: auto;
+}
+
+.separator {
+    width: 2px;
+    height: 40px;
+    background-color: #fff;
+
+    margin: 0 30px;
+}
+
+nav .riot {
+    display: flex;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arcane-logo {
+    display: flex;
+    justify-content: center;
+    padding: 60px 0 20px 0;
+}
+
+.arcane-logo img {
+    max-width: 500px;
+    width: 100%;
+}
+
+main a {
+    max-width: 300px;
+    width: 90%;
+    height: 60px;
+    background-color: #E3D2BC;
+    border-top-left-radius: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #111111;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .5s;
+}
+
+main a:hover {
+    color: #636363;
+}
+
+.new-episode {
+    max-width: 400px;
+    width: 90%;
+    height: 100px;
+    background-color: #E3D2BC;
+
+    margin-top: 100px;
+    border-top-left-radius: 15px;
+
+    display: flex;
+}
+
+.episode-video {
+    max-width: 130px;
+    width: 100%;
+    position: relative;
+    top: 8px;
+    right: 20px;
+}
+
+.episode-video .thumbnail{
+    width: 100%;
+}
+
+.episode-video .play {
+    width: 35px;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.details strong {
+    font-size: 20px;
+}
+
+.details small {
+    color: #585858;
 }
