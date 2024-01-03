@@ -58,7 +58,7 @@ main .links {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 105px;
+    gap: 80px;
 }
 
 main a {
@@ -110,9 +110,96 @@ main a:hover {
 }
 
 .details strong {
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
 .details small {
     color: #585858;
+}
+
+@media (max-width: 1024px) {
+    .arcane-logo img {
+        max-width: 350px;
+    }
+
+    main .links {
+        gap: 60px;
+    }
+
+    main a {
+        padding: 15px 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-position: center;
+    }
+}
+
+@media (max-width: 425px) {
+    nav .container {
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .new-episode {
+        padding: 25px 10px 25px 85px;
+    }
+
+    .episode-video {
+        right: 73%;
+        top: 13px;
+    }
+
+    .episode-video .thumbnail {
+        width: 110px;
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        background-position: 80%;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    nav .container {
+        gap: 90px;
+    }
+
+    .riot-logo, .netflix-logo {
+        width: 60px;
+    }
+
+    .separator {
+        margin: 0px;
+    }
+
+    nav .riot {
+        gap: 10px;
+    }
+
+    .arcane-logo img {
+        max-width: 400px;
+    }
+
+    .new-episode {
+        padding: 25px 10px 25px 80px;
+    }
+
+    .details strong {
+        font-size: 1rem;
+    }
+
+    .episode-video .thumbnail {
+        width: 100px;
+    }
+
+    .episode-video {
+        right: 70%;
+        top: 17px;
+    }
 }
